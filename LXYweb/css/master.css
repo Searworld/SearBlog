@@ -1,0 +1,205 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial', sans-serif;}
+em, b, i { font-style:normal;}
+li { list-style:none;}
+a,img { border:none;}
+a { text-decoration:none; color:#244666;}
+table { border-spacing:0; border-collapse:collapse;}
+/*通用*/
+.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.mt20 {margin-top: 20px;}
+.whitebg {background: #fff;}
+.clear { clear: both;}
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+.cont{width:1000px;margin:0 auto}
+
+/*总框架*/
+.wrasp{width: 100%;height: auto;background: -webkit-gradient(linear,center top,center bottom,from(#000), to(#ffffff));}
+.head{width: 100%;height: 50px;background-color: black}
+
+
+/*开始做头部*/
+.content{width: 1000px;margin:0px auto;}
+.head .content ul li{width: 10%;line-height: 50px;text-align: center;color: azure;float: left}
+.head .content ul li a{color: azure}
+.head .content ul li:hover{ background: -webkit-linear-gradient(top, #ff7901 0%, #fff300 100%);
+  background: #ff7901;
+  background: -moz-linear-gradient(top,  #ff7901 0%, #fff300 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7901), color-stop(100%,#fff300));
+  background: -webkit-linear-gradient(top,  #ff7901 0%,#fff300 100%);
+  background: -o-linear-gradient(top,  #ff7901 0%,#fff300 100%);
+  background: -ms-linear-gradient(top,  #ff7901 0%,#fff300 100%);
+  background: linear-gradient(top,  #ff7901 0%,#fff300 100%)}
+
+/*开始做新闻轮播图*/
+.flexside{height: 380px;margin-top: 20px;overflow: hidden;background: -webkit-gradient(linear,center top,center bottom,from(#000), to(#ffffff));}
+
+
+/*开始做主要内容*/
+.main1{height: 360px;width: 100%;background-color: white}
+.main1-left{width: 260px;height: 360px;float: left}
+.main1-left-top{width: 260px;height: 140px;background-color: black}
+.main1-left-top ul li{line-height: 10px;text-align: center;padding-top: 25px}
+.main1-left-top ul li a{color: azure}
+.main1-left-top ul li a:hover,.main1-left-bottom ul li a:hover{color: azure;text-decoration: underline}
+.main1-left-bottom{background-color: #635cfd}
+.main1-left-bottom ul li a{color: azure}
+.main1-left-bottom ul li{line-height: 43px;border-bottom: 1px dashed azure;margin-left: 10px}
+
+/*此处是覆盖的阴影*/
+.hover-box{position: relative;}
+.hover-box:hover .hover{display: block;}
+.hover{display: none; position: absolute; top:0;}
+.hover p {position: absolute; top:40%;left: 30%}
+.hover h4{position: absolute;bottom: 3px;left: 5px}
+.hover a:hover{text-decoration: underline}
+
+.hover a {color: #fff;}
+.hover-bg{width: 224px;height: 125px;background-color: black;opacity: 0.6}
+
+
+
+
+
+
+
+
+
+
+
+.main1-middle{float: left;margin-left: 15px}
+
+.main1-middle-t{width: 455px;height: 35px;border-left: 10px solid #c4c4c4;background-color:#d4d4d4}
+.main1-middle-t span{margin-left: 20px;line-height: 35px}
+.main1-middle-b{width: 465px;height:315px; margin-top: 10px; }
+.main1-middle-b-l{width: 224px}
+.main1-middle-b-l ul li a:hover{text-decoration: underline;color: red}
+
+.search{width: 250px;height: 35px;border: 1px solid blue}
+.search input{outline:none;border:0;float:left;width:215px; height: 35px}
+.search button{width:35px;height: 35px; border:0;background:black;float:right}
+.main1-right-m{width:250pxpx;height: 35px;border-left: 10px solid #c4c4c4;background-color:#d4d4d4;margin-top: 10px}
+.main1-right-m span{margin-left: 20px;line-height: 35px}
+
+
+
+.main1-right-b{margin-top: 10px}
+.main1-right-b1{position: relative}
+
+.main1-right-b1 img{width: 250px;height: 80px;}
+.cover{width: 250px;height: 80px;background-color: white;opacity: 0.1;position: absolute;top: 0px;display: none}
+.main1-right-b1:hover .cover{display: block}
+
+
+/*开始做main2*/
+
+.main2{width: 100%;height:auto;background-color: white !important}
+
+.main2-l{width: 745px;height:auto;float: left}
+.main2-r{width:248px;height: auto;float: right }
+.main2-l-t{
+
+width: 735px;height: 35px;border-left: 10px solid #c4c4c4;background-color:#d4d4d4}
+.main2-l-t span a{color: black}
+
+.main2-l-t span a:hover{text-decoration: underline;color: red}
+
+
+.main2-l-b{width: 745px;height:396px;margin-top: 10px }
+.main2-l-b1{background-color: #dbd6d6;width: 365px;height: 396px }
+.main2-l-b2{width: 360px;height: 396px;background-color: white;}
+
+
+
+.main2-hover{position: relative}
+.main2-shallow{display: none;position: absolute;bottom: 4px}
+.main2-cover{width: 365px;height: 50px;background-color: black;opacity: 0.6;}
+.main2-shallow p{position: absolute;bottom: 2px;left: 5px;line-height: 50px;color: azure;font-size: 18px}
+.main2-hover:hover .main2-shallow{display: block}
+
+
+.main2-text{width: 365px;height: 156px;}
+.main2-text a:hover,.list1-text a:hover,.main2-r-b ul li a:hover{text-decoration: underline;color: red}
+
+.list1{margin-top: 28px;width:360px;height: 78px}
+.list1:first-child{margin-top:0px}
+.list1-text{width:255px;height: 78px }
+
+.list1-text p{margin-top: 8px;font-size: 12px;margin-left: 10px}
+
+
+.main2-r{width: 240px;}
+.main2-r-t{border-left: 10px solid #c4c4c4;background-color: #dbd4d4;width: 238px;height: 35px}
+.main2-r-t span{margin-left: 10px;line-height: 35px}
+.main2-r-b{margin-top: 10px}
+
+.main3-hover{position: relative}
+.main3-shallow{display: none;position: absolute;bottom: 2px}
+.main3-cover{width: 248px;height: 40px;background-color: black;opacity: 0.6;}
+.main3-shallow p{position: absolute;bottom: 2px;left: 5px;line-height: 40px;color: azure;font-size: 16px}
+.main3-hover:hover .main3-shallow{display: block}
+.main3-shallow a:hover{text-decoration: underline;color: white}
+
+.main2-r-b ul li{line-height: 38px;border-bottom: 1px black dashed;margin-left: 10px;}
+
+.main2-r-b ul li a{color: black}
+
+
+
+
+.main4{width: 100%;height: 100px;background-color: white!important}
+.main4-t{height: 35px;border-left: 10px solid #c4c4c4;background-color: #dbd4d4}
+
+.main4 span{line-height: 35px;margin-left: 10px}
+.main4-b{margin-top: 15px}
+	
+.main4-b ul li{margin-left: 26px;float:left;width: 230px;height: 341px}
+.main4-b ul li:first-child{margin-left: 0px}
+.move{width: 230px;height: 341px;position: relative;overflow: hidden}
+.move .img{position: absolute;top:0px;left:0px;display: block}
+
+
+
+/*开始做footer*/
+.footer{width: 100%;height: auto;background-color: #3b3a3a;margin-top: 40px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

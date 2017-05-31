@@ -1,0 +1,260 @@
+/*重置样式*/
+
+body,
+div,
+p,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+form,
+input,
+table,
+th,
+td,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #FFF;
+	color: #000;
+	font-size: 12px;
+	font-style: normal;
+	font-family: 'Microsoft Yahei', '微软雅黑', 'Simsun', '宋体', 'Arial', sans-serif;
+}
+em,
+b,
+i {
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+a,
+img {
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: #244666;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+/*通用*/
+
+.hide {
+	display: none;
+}
+.flt {
+	float: left;
+}
+.frt {
+	float: right;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.whitebg {
+	background: #fff;
+}
+.clear {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+/*表示兼容IE浏览器*/
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
+}
+/*清除浮动*/
+
+/*导航之前*/
+
+* {
+	margin: 0px;
+	padding: 0px
+}
+.wraps {
+	width: 100%;
+}
+.middle {
+	width: 965px;
+	margin: 0px auto;
+}
+.header {
+	width: 100%;
+	height: 110px;
+}
+.lead {
+	width: 100%;
+	height: 30px;
+	background-color: #188fef;opacity: 0.8
+}
+
+.lead .middle li {
+	float: left;
+	display: block;
+	line-height: 30px;
+	width: 11%;
+	text-align: center
+}
+.lead .middle li a {
+	 color: azure;
+	font-weight: 400;
+}
+
+
+.logo {
+	width:45%;
+	height: 100px;
+	overflow: hidden;
+	
+}
+.header-r{
+	width: 55%;height: 110px;
+}
+.color {
+	background-color: #0264a3
+}
+.lead .middle li:hover {background-color: #0264a3
+	
+}
+
+.search{height: 32px;margin-top: 30px;
+width: 420px;
+border:1px solid #0264a3; }
+.input{margin-left: -6px;width: 50px;height: 34px;background-color: #00b1f2;color: azure}
+
+.header-r ul{margin-top: 15px}
+.header-r-b ul li{float: left;
+margin-right: 18px;
+}
+.header-r-b ul li a:hover{color: dodgerblue;text-decoration: none}
+
+
+/*轮播图*/
+
+.indexbanner{height: 247px;position: relative;overflow: hidden}
+#banner_list img {
+	border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px;
+}
+#banner_bg {
+	z-index: 1000; position: absolute; filter: alpha(opacity=30); width: 478px; bottom: 0px; height: 30px; cursor: pointer; opacity: 0.3
+}
+#banner_info ul li {
+	z-index: 1001; position: absolute; line-height: 30px; bottom: 0px; color: #666; left: 5px
+}
+#banner_text {
+	z-index: 1002; position: absolute; width: 120px; bottom: 3px; right: 3px
+}
+.indexbanner ul {
+	z-index: 1002; border-bottom: #fff 1px solid; position: absolute; filter: alpha(opacity=75); border-left: #fff 1px solid; padding-bottom: 0px; list-style-type: none; margin: 0px; padding-left: 0px; bottom: 3px; padding-right: 0px; border-top: #fff 1px solid; right: 5px; border-right: #fff 1px solid; padding-top: 0px; opacity: 0.75
+}
+.indexbanner ul li {
+	border-bottom: #fff 1px solid; border-left: #fff 1px solid; padding-bottom: 0px; background-color: #6f4f67; padding-left: 8px; padding-right: 8px; display: block; float: left; color: #fff; border-top: #fff 1px solid; cursor: pointer; border-right: #fff 1px solid; padding-top: 0px
+}
+.indexbanner ul li.on {
+	background-color: #900
+}
+#banner_list a {
+	position: absolute
+}
+#banner_list a img{width: 955px;height: 216px}
+
+/*开始做中间内容*/
+.content{height:1261px; margin-top: 20px}
+.left{width: 240px;float: left;}
+.right{width: 705px;float: left;margin-left: 10px}
+.content a{color: black}
+
+.menu-t{width:240px;height: 30px;background-color:#188fef;opacity: 0.8;
+line-height: 30px;color: #f8f8f8;font-weight: 500; }
+.menu-b{width: 240px;height: 470px;background-color: #f8f8f8}
+.menu-b2{width: 240px;height: 218px;background-color: #f8f8f8}
+.menu-b ul li,.menu-b2 ul li{line-height: 35px;margin-left: 50px}
+.menu-b3{width: 240px;line-height: 40px;background-color:#f8f8f8}
+.menu-b3-t{line-height: 40px;margin-left: 50px}
+
+
+.right-t{width: 705px;height: 30px;background-color: #188fef;opacity: 0.8;
+line-height: 30px;color: #f8f8f8;font-weight: 500;}
+.right-t-1{margin-left: 10px;display: inline}
+.right-t-2{margin-left: 590px;display: inline}
+
+
+.right-2{width: 705px; height: 30px; border:1px solid #7e6f6f;margin-top: 20px}
+
+.right-2 ul li{float: left;
+line-height: 30px;width: 14%;
+text-align: center;border-right:1px solid #7e6f6f }
+.colour{background-color: #f8f8f8}
+
+.right-3{width:705px;}
+.right-3-l{width: 208px;height: 230px;margin-left: 20px;float: left;margin-top: 18px;border:1px solid #b4b1b1}
+.right-3-m{width: 208px;height:45px;line-height: 40px;font-weight: 600;text-align: center }
+.right-3-m a {color: black}
+
+.right-3-m a:hover,.right-5 ul li a:hover,.menu-b ul li a:hover,.menu-b2 ul li a:hover,.footer-3 a:hover{color: cornflowerblue;text-decoration: underline}
+
+.eye{margin-left: 10px;display: inline;color: black;text-align: top}
+.click{display:inline-block; margin-left: 40px;color: black}
+.right-4 img{margin-top: 30px;margin-left: 230px;margin-bottom: 20px}
+.right-t-1{margin-left: 20px}
+.right-t-2{margin-left: 280px}
+
+.right-5{width: 705px;}
+.right-5-l{width: 48%;}
+.right-5-l ul li, .right-5-r ul li{margin-left: 10px;line-height: 25px}
+.right-5-r{width: 52%;}
+
+
+.footer{margin-top:-130px;background-color: #f8f8f8}
+.footer-1 ul li{float: left; margin-left: 15px;margin-top: 15px}
+.footer-1 ul li a{color: black}
+.footer-3{margin-top: 20px;margin-left: 15px}
+.footer-4{margin-top: 15px;margin-left: 25px}
+
+/*开始做案例教程的*/
+
+.menu-b4 ul li{
+	
+	margin-left: 10px;line-height: 10px;
+	margin-top: 20px
+}
+
+
+.right-top{width: 100%;height: 40px;border-top: 5px solid #d6d5d5;border-bottom: 1px solid #d6d5d5}
+.right-top2{width: 100%;height: 35px;border: 1px solid #39a0f2;margin-top: 10px;}
+.right-top2 span a:hover{color: cornflowerblue;text-decoration:none }
+.right-top3 img{float: left;}
+
+.right-top5{width: 100%;margin-top: 20px}
+
+.video{width: 22%;margin-left: 20px;height: 175px;background-color: aquamarine;float:left}
+
+.video video{width: 150px;height: 140px;
+}
+p{text-indent: 2em;width:705px;line-height:30px}
+.mn ul li{line-height: 35px;border-bottom: 1px black dashed;font-size: 15px;font-weight: 500;}
+.mn ul li a{color: black}
+.mn ul li a:hover{color: cornflowerblue;text-decoration: underline }
+.ym{margin-top:10px;background-color: #c9c7c7;width: 100%;height: 30px}

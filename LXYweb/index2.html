@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>picture-move</title>
+	<style>
+		.move{width: 200px;height: 125px;border:1px solid black;overflow: hidden;position: relative}
+		.pic{position: absolute;top:0px;left: 0px;display: block}
+	</style>
+	
+</head>
+<body>
+	<div class="wrasp">
+		<div class="move">
+			<a href=""><img class="pic" src="img/course_ps%20225%20125.jpg"></a>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.7.2.min.js"></script>
+	
+	
+	
+	
+	<script>
+	$(document).ready(function () {
+      $('.move').hover(function () {
+        $(this).find('.pic').stop().animate({
+          left: '-20px'
+        },3000);
+      },
+		function () {
+        $(this).find('.pic').stop().animate({
+          left: 0
+        },2000);
+      });
+    });
+
+	</script>
+	
+</body>
+</html>

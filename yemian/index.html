@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简单页面</title>
+	<link rel="stylesheet" type="text/css" href="master.css">
+  <link rel="stylesheet" href="style/documentation.css" type="text/css" />
+<link rel="stylesheet" href="style/jalendar.css" type="text/css" />
+<style type="text/css">
+  @font-face {font-family: 'iconfontyyy';
+    src: url('font/iconfont.eot');
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('font/iconfont.woff') format('woff'),
+    url('font/iconfont.ttf') format('truetype'),
+    url('font/iconfont.svg#iconfontyyy') format('svg');
+}
+
+.iconfontyyy{
+    font-family:"iconfontyyy" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script><!--jQuery-->
+<script type="text/javascript" src="js/jalendar.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('#myId').jalendar({
+        customDay: '2017/12/01',  // Format: Year/Month/Day
+        color: '#ed145a', // Unlimited Colors
+        lang: 'EN' // Format: English — 'EN', Türkçe — 'TR'
+    });
+    $('#myId2').jalendar({
+        customDay: '2016/02/29',
+        color: '#023447',
+        lang: 'ES'
+    });
+    $('#myId3').jalendar();
+});
+
+
+
+ $(function(){
+      $('body').on('click','.bottom-li li',function(){
+        // alert($(this).index());
+        var index=$(this).index();
+        $('.bottom-li2 div').eq(index).fadeIn(500).siblings().hide();
+      })
+    })
+</script>
+   
+
+
+</head>
+<body>
+<div class="wrap">
+  <div class="center clearfix">
+	<header>
+	     <div class="top-img">
+	     	<img src="img/1.png">
+	     </div>
+	     <div class="search"></div>
+	     <div class="login">
+	     	<img src="img/2.png">
+	     	<span>登陆</span>
+	     </div>
+
+	</header>
+	<content class="clearfix">
+		<div class="content-left">
+            <div class="left-t">
+                <div class="top-1 flt">
+                  <span><img src="img/1.jpg" width="50px" height="50px" style="border:2px solid #fff;border-radius: 50%;display:inline-block;float:left"
+                   ></span>
+                  <span style="color:#fff;display:inline-block;line-height: 50px;height:40px;width:50px;float:left;text-align: center">Sear</span>
+                </div>
+                <div class="top-2 flt">
+                     <ul class="top2-left">
+                       <li>200</li>
+                       <li>收藏</li>
+                     </ul>
+                     <ul class="top2-left">
+                       <li>313</li>
+                      <li>粉丝</li>
+                     </ul>
+                </div>
+            </div>
+         <div class="left-b">
+              <ul class="left-b1">
+                    <li>
+                      <i class="iconfontyyy baobiao">&#xe60e;</i>
+                      <span>个人报表</span>
+                               <ul class="left-b2">
+                                 <li>
+                                    <i class="iconfontyyy baobiao hover">&#xe631;</i>
+                                    <i class="iconfontyyy tubiao">&#xe61f;</i>
+                                    <span>文件一</span>
+                                     <ul class="left-b3">
+                                       <li>
+                                         <i class="iconfontyyy tuku">&#xe60d;</i>
+                                         <span>文档一</span>
+                                       </li>
+                                       <li>
+                                         <i class="iconfontyyy tuku">&#xe60d;</i>
+                                         <span>文档二</span>
+                                       </li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                    <i class="iconfontyyy baobiao hover">&#xe631;</i>
+                                    <i class="iconfontyyy tubiao">&#xe61f;</i>
+                                    <span>文件二</span>
+                                 </li>
+                                 <li>
+                                    <i class="iconfontyyy baobiao hover">&#xe631;</i>
+                                    <i class="iconfontyyy tubiao">&#xe61f;</i>
+                                    <span>文件三</span>
+                                 </li>
+                               </ul>
+                    </li>
+                    <li>
+
+                      <i class="iconfontyyy baobiao">&#xe60f;</i>
+                      <span>个人收藏</span>
+                    </li>
+                    <li>
+                      <i class="iconfontyyy baobiao">&#xe647;</i>
+                      <span>我的分享</span>
+                    </li>
+                    <li>
+                      <i class="iconfontyyy baobiao">&#xe670;</i>
+                      <span>图库</span>
+                    </li>
+                    <li>
+                      <i class="iconfontyyy baobiao">&#xe621;</i>
+                      <span>成长记录</span>
+                    </li>
+                    <li>
+                      <i class="iconfontyyy baobiao">&#xe84f;</i>
+                      <span>账户信息</span>
+                    </li>
+              </ul>
+      
+          </div>
+
+
+
+			
+		</div>
+		<div class="content-right clearfix">
+			<div class="content-r-top"></div>
+			<div class="content-r-bottom">
+
+
+                     <!--  第一节 -->
+
+				<div class="r-top-1">
+					<div class="top-1-left">
+						<label>查询项</label>
+						   <select>
+						   	<option>第一项</option>
+						   	<option>第二项</option>
+						   	<option>第三项</option>
+						   </select>
+					</div>
+					<div class="top-1-middle">
+					  <div class="middle-left">
+					   <ul>
+					   	<li>
+					   		<label>买方</label>
+						   <select style="margin-left: 18px">
+						   	<option>第一项</option>
+						   	<option>第二项</option>
+						   	<option>第三项</option>
+						   </select>
+					   	</li>
+					   	<li>
+					   		<label>卖方</label>
+						   <select style="margin-left: 18px">
+						   	<option>第一项</option>
+						   	<option>第二项</option>
+						   	<option>第三项</option>
+						   </select>
+					   	</li>
+					   </ul>
+					   </div>
+					   <img src="img/3.png">
+					</div>
+					<div class="middle-three">
+						<ul>
+							<li>
+							    <label>日期</label>
+							    <select style="margin-left: 18px">
+								   	<option>第一项</option>
+								   	<option>第二项</option>
+								   	<option>第三项</option>
+						         </select>
+							</li>
+							<li>
+								<label>总耗时</label>
+							    <select style="margin-left: 18px">
+								   	<option>1天</option>
+								   	<option>2天</option>
+								   	<option>3天</option>
+							   </select>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<label>人数</label>
+							    <select style="margin-left: 18px">
+								   	<option>1人</option>
+								   	<option>2人</option>
+								   	<option>3人</option>
+							   </select>
+							</li>
+							<li>
+								<label>成交项</label>
+							    <select style="margin-left: 18px">
+								   	<option>1项</option>
+								   	<option>2项</option>
+								   	<option>3项</option>
+							   </select>
+							</li>
+						</ul>
+					</div>
+					<button class="button">搜索</button>
+					
+				</div>
+         
+                  <!-- 第二节 -->
+                <div class="r-top-2">
+                	<ul>
+                		<li><</li>
+                		<li>
+                			<p>10:00am</p>
+                			<p>
+                				<span>￥</span>
+                				<span>1200</span>
+                			</p>
+                		</li>
+                		<li>
+                			<p>11:00am</p>
+                			<p>
+                				<span>￥</span>
+                				<span>1200</span>
+                			</p>
+                		</li>
+                		<li>
+                			<p>12:00am</p>
+                			<p>
+                				<span>￥</span>
+                				<span>1200</span>
+                			</p>
+                		</li>
+                		<li>
+                			<p>13:00am</p>
+                			<p>
+                				<span>￥</span>
+                				<span>1200</span>
+                			</p>
+                		</li>
+                		<li>
+                			<p>14:00am</p>
+                			<p>
+                				<span>￥</span>
+                				<span>1200</span>
+                			</p>
+                		</li>
+                		<li>
+                			<p>15:00am</p>
+                			<p>
+                				<span>￥</span>
+                				<span>1200</span>
+                			</p>
+                		</li>
+                		
+                		<li>></li>
+                		<li>
+                		     <img src="img/4.png" class="li-img">
+                		     <span class="chaxun">历史查询</span>
+                		</li>
+                	</ul>
+                </div>
+
+              <!--   第三节 -->
+              <p style="margin-top: 20px">2016年4月报表统计</p>
+              <div class="r-top-3">
+              	<ul>
+              		<li style="border-left: 3px solid #45b29d">
+              			<span>
+              				<p>111111</p>
+              				<p>成交量</p>
+              			</span>
+              			<span style="width:60px;height: 45px;background-color: #45b29d;display: inline-block"></span>
+              		</li>
+              		<li style="border-left: 3px solid #08c">
+              			<span>
+              				<p>111111</p>
+              				<p>成交量</p>
+              			</span>
+              			<span style="width:60px;height: 45px;background-color: #08c;display: inline-block"></span>
+              		</li>
+              		<li style="border-left: 3px solid #d04c37">
+              			<span>
+              				<p>111111</p>
+              				<p>成交量</p>
+              			</span>
+              			<span style="width:60px;height: 45px;background-color:#d04c37;display: inline-block"></span>
+              		</li>
+              		<li style="border-left: 3px solid #e1cd46;margin-right: 0px">
+              			<span>
+              				<p>111111</p>
+              				<p>成交量</p>
+              			</span>
+              			<span style="width:60px;height: 45px;background-color: #e1cd46;display: inline-block"></span>
+              		</li>
+              	</ul>
+              </div>
+
+              <!-- 第四节 -->
+              <div class="r-top-4">
+              	<div class="r-top-4-l">
+              		<div class="l-top"><span>第一项目组</span></div>
+              		<div class="l-bottom" id="l-bottom">
+              		
+              	  	<ul class="bottom-li" id="bottom-li">
+                        <li >项目1</li>
+                        <li>项目2</li>
+                        <li>项目3</li>
+                        <li>项目4</li>
+                        <li>项目5</li>
+                    </ul>
+              			
+              			<div class="bottom-li2" id="bottom-li2">
+              				<div style="display:block">111</div>
+              				<div>222</div>
+              				<div>333</div>
+              				<div>444</div>
+              				<div>555</div>
+              			</div>
+                </div>
+              	</div>
+              	<div class="r-top-4-r">
+              		<div class="l-top"><span>第一项目组</span></div>
+              		<div class="r-bottom">
+              		   <div class="r-bottom-text">
+              			<p>标题</p>
+              			<h3>项目报表 三</h3>
+              			 <ul>
+              			 	<li>价格</li>
+              			 	<li>￥138</li>
+              			 </ul>
+
+              			 <ul>
+              			 	<li>负责人</li>
+              			 	<li>小A</li>
+              			 </ul>
+              			 <div class="text">
+              			 	 <label>详情描述</label><br/>
+              			 	 <textarea rows="6" cols="32"></textarea>
+              			 </div>
+              			 <div class="zhunsou">
+              			  <input type="checkbox" name="zs">
+              			 	<label for="zs" style="vertical-align:top">遵守保密协议</label>
+              			 	<button style="background-color: #08c;color: #fff;float: right">提交</button>
+              			 </div>
+              			</div>
+
+              		</div>
+              	</div>
+              </div>
+              
+                  <!-- 第五节 -->
+
+                  <!--  <div class="r-top-5-r"> -->
+  <article>
+
+    <div id="myId" class="jalendar">
+        <div class="added-event" data-date="14/12/2017" data-time="Tüm Gün" data-title="WWDC 13 on San Francisco, LA"></div>
+        <div class="added-event" data-date="16/12/2017" data-time="20:45" data-title="Tarkan İstanbul Concert on Harbiye Açık Hava Tiyatrosu"></div>
+        <div class="added-event" data-date="17/12/2017" data-time="21:00" data-title="CodeCanyon İstanbul Meeting on Starbucks, Kadıköy"></div>
+        <div class="added-event" data-date="17/12/2017" data-time="22:00" data-title="Front-End Design and Javascript Conferance on Haliç Kongre Merkezi"></div>
+        <div class="added-event" data-date="17/12/2017" data-time="22:00" data-title="Lorem ipsum dolor sit amet"></div>
+    </div>
+      <div class="bottom-right">
+          <div class="l-top"><span>第一项目组</span></div>
+          <table border="1">
+            <tr>
+              <th style="width:65px">排名</th>
+               <th style="width: 90px">品牌</th>
+                <th>搜索指数</th>
+            </tr>
+            <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+             <tr>
+              <td style="width:65px">1</td>
+               <td style="width: 90px">大众</td>
+                <td>
+                  <span style="margin-left:5px">123456</span>
+                  <span class="tiao"></span>
+                </td>
+            </tr>
+          </table>
+        
+      </div>
+
+</article>
+
+
+
+                     	<!-- <div class="r-right"></div>
+                     </div> -->
+
+
+			</div>
+		</div>
+	</content>
+	
+  </div>
+
+</div>
+   
+
+  
+</script>
+	
+</body>
+</html>
